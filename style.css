@@ -313,6 +313,36 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 20px;
 }
 
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Keeps it above other elements */
+}
+
+.floating-button button {
+  padding: 15px 25px;
+  background-color: #f44336; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.floating-button button:hover {
+  background-color: #d32f2f; /* Change color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.floating-button button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
 /* brand carousel */
 .brand-carousel .brand-item {
   background: #FFFFFF;
